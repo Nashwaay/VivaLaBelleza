@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Cosmetics</title>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
+    <link href="../css/pages.css" type="text/css" rel="stylesheet" />
+   <script src="../js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#bar img").on("click", function () {
+                $("#nav,.arrow,#bar").css('opacity', '0.2');
+                var path = $(this).attr('src');
+                var img = $('<img src="' + path + '"/>');
+                $("#photo").html(img);
+                $("#popup").fadeIn();
+
+            });
+
+            $("#close").on("click", function () {
+                $("#popup").fadeOut();
+                $("#nav,.arrow,#bar").css('opacity', '1');
+
+            });
+
+            $("#arrow2").on("click", function () {
+                $elem = $('#bar :first-child');
+                $('#bar').append($elem.clone());
+                $elem.remove();
+            });
+
+            $("#arrow1").on("click", function () {
+                $elem = $('#bar :nth-child(5)');
+                $('#bar').prepend($elem.clone());
+                $elem.remove();
+            });
+        });
+</script>
+<style type="text/css">
+ body {
+        background:#C6766D/*url(../images/cosmeticsbaq.jpg) no-repeat center*/;
+        }
+#logo {
+top:5%;  }
+
+#sign {
+top:20%;
+left:60%;
+}
+
+#box{
+position:relative;
+top:-150px;
+}
+
+#bar{
+position:relative;
+top:150px;
+left:10%;
+width:70%;
+height:210px;
+overflow:hidden;
+}
+
+#bar img{width:200px;
+height:180px;
+border:2px white solid;
+margin:10px;
+border-radius:10px;}
+
+
+.arrow{
+width:50px;
+height:50px;
+border:5px gray dashed;
+border-radius:25px;
+}
+#arrow2{float:right;}
+
+#arrow1{
+    float:left;
+    position:relative;
+    top:150px; 
+    left:7%; 
+    margin-top:4%;
+    margin-right:6%;
+}
+
+.arrow:hover{
+border:5px white dashed;
+}
+#popup {
+width:600px;
+height:500px;
+background-color:white;
+position:relative;
+top:-50px;
+z-index:10;
+display:none;
+margin:0 auto;
+}
+
+#photo {
+width:500px;
+height:500px;
+display:inline;
+}
+
+#photo img {
+width:500px;
+height:500px;
+}
+#info {
+width:300px;
+height:500px;
+float:right;
+}
+
+#close{
+width:50px;
+height:50px;
+float:right;
+}
+#close:hover {
+width:60px;
+height:60px;
+}
+footer{
+position:absolute;
+top:100%;
+width:100%;
+}
+</style>
+</head> 
+<body>
+<div id="wrap">
+   <nav>
+  <ul id="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="">Features</a>
+        <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="cosmetics.html">Cosmetics</a></li>
+        </ul>
+      </li>
+      <li><a href="">Specials</a>
+        <ul>
+        <li><a href="membership.html">Membership Treats</a></li>
+        <li><a href="bonusdeals.html">Bonus Deals</a></li>
+        </ul>
+      </li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="signin.html">Sign In</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+   <a href="../index.html" id="logo" ><img src="../images/logo.png"/></a>     
+    </nav>     
+  
+      <div id="popup"><div id="photo"></div>
+        <img src="../images/close.jpg" id="close"/>
+    </div>
+   
+     <div id="box">
+        <img src="../images/a1.png" class="arrow" id="arrow1"/>
+        <div id="bar">
+            <img src="../images/cosmetics/6.jpg" />
+            <img src="../images/cosmetics/1.jpg" />
+            <img src="../images/cosmetics/4.jpg" />
+            <img src="../images/cosmetics/3.jpg" />
+            <img src="../images/cosmetics/5.jpg" />
+            <img src="../images/cosmetics/7.jpg" />
+            <img src="../images/cosmetics/8.jpg" />
+            <img src="../images/cosmetics/9.jpg" />
+            <img src="../images/cosmetics/10.jpg" />
+            <img src="../images/cosmetics/11.jpg" />
+            <img src="../images/cosmetics/12.jpg" />
+            <img src="../images/cosmetics/13.jpg" />
+            <img src="../images/cosmetics/2.jpg" />
+            <img src="../images/cosmetics/14.jpg" />
+            <img src="../images/cosmetics/15.jpg" />
+            <img src="../images/cosmetics/16.jpg" />
+        </div>
+        <img src="../images/a2.png" class="arrow" id="arrow2"/>
+    </div>
+<footer>
+	<a href="mailto:nashwaay@gmail.com">Contact Us</a>
+    </footer> 
+</div>
+
+</body>
+
+</html>

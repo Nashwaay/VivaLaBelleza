@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
+       <style type="text/css">
+             @font-face {
+            font-family:Baron;
+            src:url('../fonts/Baron Neue Bold 60.otf');
+            }
+            body {font-family:Arial, Sans-Serif;
+                  background:url(../images/pattern4.jpg) repeat;
+                  
+            }
+            h1 {font-family:Baron;  }
+            #container {font-size:12px;
+                        width:500px; 
+                        height:400px;
+                        background-color:white;
+                        opacity:0.7;
+                        border-radius:10px;
+                        margin:0 auto;
+            }
+ 
+            /* Nicely lines up the labels. */
+            form label {display:inline-block; width:140px;}
+            form .line {clear:both;}
+            form .line.submit {text-align:right;}
+           
+           .line {
+           color:#d9228d;
+           margin-left:15px;
+           }
+           
+           .submit input {
+           background-color:#d9228d;
+           color:white;
+           font-weight:bold;
+           width:140px;
+           height:40px;
+           float:right;
+           margin:10px;
+           }
+           
+        </style>
+    
+</head>
+<body>
+    <div id="wrap">
+         <nav>
+  <ul id="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="">Features</a>
+        <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="cosmetics.html">Cosmetics</a></li>
+        </ul>
+      </li>
+      <li><a href="">Specials</a>
+        <ul>
+        <li><a href="">Membership Treats</a></li>
+        <li><a href="bonusdeals.html">Bonus Deals</a></li>
+        </ul>
+      </li>
+      <li><a href="contactus.html">Contact Us</a></li>
+     <li><a href="signin.html">Sign In</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+   <a href="../index.html" id="logo" ><img src="../images/logo.png"/></a>     
+    </nav>     
+            <div id="container">
+                <h1>Sign Up</h1>
+            <form>
+                      
+			<label for="fname" class="line">First Name<span style="color:red"> *</span></label>
+			<input type="text" id="surname" pattern="[a-z,A-Z]{3,20}" autofocus required title="must be alphabetic in 3-20 chars"/></br>
+			<label for="lname" class="line">Last Name<span style="color:red"> *</span></label>
+			<input type="text" id="names" pattern="[a-z,A-Z]{3,20}" required title="must be alphabetic in 3-20 chars"/></br>
+			<label for="dob" class="line">Date of Birth<span style="color:red"> *</span></label>
+			 <input type="date" id="dob" required/></br>
+            			<label for="email" class="line">Email<span style="color:red"> *</span></label>
+			<input type="email" id="email" placeholder="someone@xyz.com" required/></br>
+			<label for="username" class="line">Username<span style="color:red"> *</span></label>
+			<input type="text" id="username" pattern="[a-z,A-Z,0-9]{5,20}" required title="must be atleast 5 char long, can be alphanumeric"/></br>
+			<label for="pwd" class="line">Password<span style="color:red"> *</span></label>
+			<input type="password" id="pwd" required/></br>
+			<label for="rpwd" class="line">Retype Password<span style="color:red"> *</span></label>
+			<input type="password" id="Password1" required/></br>
+		     <div class="submit"></br>
+			<input type="submit" value="Join Our Club :)" />
+            <input type="reset" value="Reset" />
+		    </div>
+              </br></br></br><p>Note: Please make sure your details are correct before submitting form and that all fields marked with * are completed!.</p>
+            </form>
+         </div>
+    
+       </div>
+</body>
+</html>

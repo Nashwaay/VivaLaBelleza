@@ -1,0 +1,52 @@
+﻿#logo {
+float:right;
+}
+#wrap {
+width:100%;
+margin:0 auto;
+}
+#content {
+background-color:white;
+opacity:0.5;
+width:70%;
+height:50%;
+border-radius:5%;
+margin:0 auto;
+position:relative;
+left:10%;
+}
+#content p {
+ -ms-word-break: break-all;
+  word-break: break-all;
+  font:16px "Segoe Print";
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+text-shadow:0 0 1px black;
+}
+#content h1 {
+float:right;
+margin:0 0 -1% -1%;
+}
+
+#wrap #img1 {
+float:left;
+z-index:5;
+width:25%;
+height:25%;
+
+}
+
+.link {
+position:relative;
+top:100px;
+left:5%;
+text-decoration:none;
+color:whitesmoke;
+}
+
+.link:hover {
+text-shadow:0 0 2px pink;
+    }
+footer{
+height:50px;}
